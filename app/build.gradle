@@ -17,7 +17,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id "androidx.navigation.safeargs"
 }
@@ -32,7 +31,8 @@ android {
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"  
+        versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -95,4 +95,7 @@ dependencies {
 
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
+
+    // Multidex
+    implementation "androidx.multidex:multidex:$multidex_version"
 }
