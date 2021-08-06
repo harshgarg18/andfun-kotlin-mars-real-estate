@@ -17,7 +17,6 @@
 
 package com.example.android.marsrealestate
 
-import android.opengl.Visibility
 import android.view.View
 import android.widget.ImageView
 import androidx.core.net.toUri
